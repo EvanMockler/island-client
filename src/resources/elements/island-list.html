@@ -1,0 +1,21 @@
+<template>
+  <div class="ui stacked segment">
+    <h3 class="ui dividing header"> Islands already added </h3>
+    <table class="ui celled table segment">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Category</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr repeat.for="island of islands">
+        <td> ${island.name}</td>
+        <td> ${island.description}</td>
+        <td> ${island.category.category}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</template>

@@ -1,0 +1,13 @@
+<template>
+  <require from="../resources/elements/island-list"></require>
+  <require from="../resources/elements/island-form"></require>
+
+  <div class="ui stackable two column grid">
+    <div class="seven wide column">
+      <island-form island-descriptions.bind="islandDescriptions" categories.bind="categories"> </island-form>
+    </div>
+    <div class="nine wide column">
+      <island-list islands.bind="islands"></island-list>
+    </div>
+  </div>
+</template>
