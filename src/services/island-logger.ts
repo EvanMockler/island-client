@@ -16,7 +16,7 @@ export class IslandLogger {
 
   constructor(private httpClient: HttpClient, private ea: EventAggregator, private au: Aurelia, private router: Router) {
     httpClient.configure((http) => {
-      http.withBaseUrl('http://LAPTOP-H3TFJSOQ:3000');
+      http.withBaseUrl('https://secure-lake-89633.herokuapp.com');
     });
   }
 
